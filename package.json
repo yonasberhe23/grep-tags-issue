@@ -1,0 +1,17 @@
+{
+  "name": "grep-tags-issue",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:yonasberhe23/grep-tags-issue.git",
+  "license": "MIT",
+  "devDependencies": {
+    "@cypress/grep": "^4.1.0",
+    "cypress": "11.1.0"
+  },
+  "scripts": {
+    "test": "CYPRESS_grepTags='@smoke+@user1 --@jenkins' CYPRESS_grepFilterSpecs=true CYPRESS_grepOmitFiltered=true yarn cypress run"
+  },
+  "dependencies": {
+    "glob": "^11.0.1"
+  }
+}
